@@ -52,15 +52,15 @@ setInterval(() => {
     };
 
     // Trigger animation when visible
-    const section = document.querySelector('.counter-section');
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        animateCounters();
-        observer.unobserve(section);
-      }
-    }, { threshold: 0.4 });
+    // const section = document.querySelector('.counter-section');
+    // const observer = new IntersectionObserver(entries => {
+    //   if (entries[0].isIntersecting) {
+    //     animateCounters();
+    //     observer.unobserve(section);
+    //   }
+    // }, { threshold: 0.4 });
 
-    observer.observe(section);
+    // observer.observe(section);
 
 
 
@@ -73,47 +73,5 @@ document.querySelectorAll(".pricing-card").forEach((card) => {
     card.classList.remove("active");
   });
 });
-
-
-
-
-
-  // about us 
-  // about us
- // Dynamic year in footer
-document.getElementById("year").textContent = new Date().getFullYear();
-
-
-// Dynamic Year
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// Simple alert on form submit
-const form = document.querySelector(".contact-form");
-if (form) {
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Thank you for contacting Rootway! We'll reach out soon 🌿");
-    form.reset();
-  });
-}
-
-
-
-
-
-
-
-// shop
-// shop
-// Simple animation or interaction (optional)
-document.querySelectorAll(".btn").forEach((btn) => {
-  btn.addEventListener("mouseenter", () => {
-    btn.style.transform = "scale(1.05)";
-  });
-  btn.addEventListener("mouseleave", () => {
-    btn.style.transform = "scale(1)";
-  });
-});
-
 
 
