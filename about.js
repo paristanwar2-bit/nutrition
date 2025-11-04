@@ -1,4 +1,12 @@
- // about us 
+// Mobile Navbar Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+
   // about us
  // Dynamic year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
