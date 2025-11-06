@@ -22,6 +22,7 @@ body {
 }
 
 
+
 /* Navbar */
 .navbar {
   background-color: #0c0c0c;
@@ -68,7 +69,7 @@ body {
 }
 
 .icons {
-  margin-left: 40px;              
+  margin-left: 40px;
 }
 
 .icons i {
@@ -106,7 +107,23 @@ body {
   .menu-toggle {
     display: block;
   }
+
+  /* Close button inside the menu (top-right corner of the menu) */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 32px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+  }
+
+  .nav-links.active .close-btn {
+    display: block;
+  }
 }
+
 
 
 
