@@ -22,6 +22,8 @@ body {
 }
 
 
+
+
 /* Navbar */
 .navbar {
   background-color: #0c0c0c;
@@ -297,7 +299,7 @@ body {
     @media (max-width: 900px) {
       .about-section {
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
       }
 
       .about-content {
